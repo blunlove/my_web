@@ -31,7 +31,7 @@
 
 <script>
 import editCookie from './editCookie';
-import {getLocalStorageItem, setCookiesItem} from '@/utils';
+import {getLocalStorageItem, setCookiesItem} from 'alun-utils';
 export default {
   name: 'index',
   components: {

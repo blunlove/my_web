@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import {formRules as rules, setLocalStorageItem, getLocalStorageItem} from '@/utils';
+import {formRules as rules, setLocalStorageItem, getLocalStorageItem} from 'alun-utils';
 export default {
   name: 'editCookie',
   data() {
