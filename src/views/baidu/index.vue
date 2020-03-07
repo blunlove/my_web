@@ -1,11 +1,11 @@
 <template>
-  <content-box title="bilibili图床" background="tomato"></content-box>
+  <content-box title="图片文字识别" background="gold"></content-box>
 </template>
 
 <script>
 import contentBox from '@/components/container/alContentBox';
 export default {
-  name: 'index',
+  name: 'baidu',
   components: {
     contentBox
   }

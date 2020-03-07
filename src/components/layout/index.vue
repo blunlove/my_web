@@ -1,6 +1,15 @@
 <template>
-  <div class="layout full-box">
+  <div class="layout fullbox">
     <base-menu></base-menu>
+    <div class="layout-content inline">
+      <transition
+        name="slide-fade"
+        mode="out-in"
+        enter-active-class="animated bounceInRight"
+        leave-active-class="animated bounceOutRight">
+        <router-view></router-view>
+      </transition>
+    </div>
   </div>
 </template>
 
@@ -16,6 +25,10 @@ export default {
 
 <style lang="less" scoped>
 .layout {
-  height: 100%;
+  display: flex;
+  &-content {
+    position: relative;
+    flex-grow: 1;
+  }
 }
 </style>

@@ -14,8 +14,12 @@ const routes = [
     component: 'views/index',
   },
   {
-    path: '/about',
-    component: 'views/about',
+    path: '/baidu',
+    component: 'views/baidu',
+  },
+  {
+    path: '/craft',
+    component: 'views/craft',
   },
 ].map(route => {
   route.component = _import(route.component);

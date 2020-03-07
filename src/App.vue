@@ -1,10 +1,6 @@
 <template>
-  <div class="full-box" id="app">
+  <div class="fullbox" id="app">
     <layout></layout>
-    <div id="nav">
-      <!-- <router-link to="/">Home</router-link> -->
-    </div>
-    <router-view />
   </div>
 </template>
 
@@ -21,6 +17,7 @@ export default {
 #app {
   min-width: 1200px;
   min-height: 600px;
-  background-image: url('/image/background.jpg');
+  background-color: #483d8b;
+  // background-image: url('/image/background.jpg');
 }
 </style>

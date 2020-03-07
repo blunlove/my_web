@@ -1,45 +1,71 @@
 <template>
-  <!--<div class="flex-box dj-flex dj-layout-container">-->
-  <!--<div class="dj-flex dj-flex-1 dj-layout-main">-->
-  <div class="">
-    <slot></slot>
+  <div class="al-content-box fullbox" :style="{background}">
+    <div class="background"></div>
+    <div class="al-content-box-content">
+      <div class="al-content-box-content-header">
+        <div class="line"></div>
+        {{title}}
+      </div>
+      <div class="al-content-box-content-bottom"></div>
+      <slot></slot>
+    </div>
   </div>
-  <!--</div>-->
-  <!--</div>-->
 </template>
 
 <script>
-  // import boxHeader from './boxHeader.vue';
-  // import scrollBox from '../djScrollBox';
-  // import {listenerPolicy} from 'djcpsweb-utils';
-
-  export default {
-    name: 'dj-content-box',
-    props: {
-      title: {
-        default: null,
-      },
+export default {
+  name: 'al-content-box',
+  props: {
+    title: {
+      default: '',
     },
-    mixins: [listenerPolicy],
-    mounted() {
-      // this.testHeight();
-      // this.addListener(window, 'resize', () => {
-      //   this.testHeight();
-      // });
+    background: {
+      default: '',
     },
-    methods: {
-      // testHeight() {
-      //   let margin = 20;
-      //   let minHeight = this.$el.offsetHeight - margin * 2;
-      //   Object.assign(this.$refs.inside.style, {
-      //     'margin': `${margin}px`,
-      //     'min-height': `${minHeight}px`,
-      //   });
-      // },
-    },
-    components: {
-      // boxHeader,
-      // scrollBox,
-    },
-  };
+  },
+};
 </script>
+<style lang="less">
+.al-content-box {
+  position: relative;
+  height: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+  &-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: white;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.4);
+    &-header {
+      position: relative;
+      height: 50px;
+      padding: 10px;
+      font-size: 40px;
+      line-height: 50px;
+      .line {
+        display: inline-block;
+        width: 15px;
+        height: 100%;
+        vertical-align: top;
+        background: rgb(25, 29, 255);
+      }
+    }
+    &-bottom {
+      position: relative;
+      flex-grow: 1;
+      margin: 20px;
+    }
+  }
+}
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 110%;
+  height: 100%;
+  background: inherit;
+}
+</style>

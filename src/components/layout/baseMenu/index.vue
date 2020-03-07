@@ -1,7 +1,7 @@
 <template>
   <div class="base-menu">  
     <div class="base-menu-content">
-      <div class="base-menu-content-item" v-for="item in config" @click="gotoRoute(item)">
+      <div :class="['base-menu-content-item', {active: $route.path === item.path}]" v-for="item in config" @click="gotoRoute(item)">
         <i :class="['icon', item.icon]"></i>
       </div>
     </div>
@@ -16,30 +16,30 @@ export default {
       config: [
         {
           icon: 'fa fa-bolt',
-          path: 'index',
+          path: '/index',
         },
         {
           icon: 'fa fa-keyboard-o',
-          path: 'about',
+          path: '/baidu',
         },
         {
           icon: 'fa fa-rocket',
-          path: 'index',
+          path: '/craft',
         },
         {
           icon: 'fa fa-dribbble',
-          path: 'index',
+          path: '/2',
         },
         {
           icon: 'fa fa-plus-circle',
-          path: 'index',
+          path: '/3',
         },
       ]
     }
   },
   methods: {
     gotoRoute(item) {
-      if (this.$route.path === '/' + item.path) return;
+      if (this.$route.path === item.path) return;
       this.$router.push(item.path);
     }
   }
@@ -59,17 +59,21 @@ export default {
       display: block;
       padding: 30px 0;
       &:hover {
+        cursor: pointer;
         .icon {
-          opacity: 0.8;
+          opacity: 0.6;
+          transform: scale(1.4);
+        }
+      }
+      &.active {
+        .icon {
           transform: scale(1.8);
         }
       }
       .icon {
         font-size: 30px;
         color: #fff;
-        cursor: pointer;
         transition: all 0.5s;
-        // transition-delay: 0.25s;
       }
     }
   }
