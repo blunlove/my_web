@@ -1,6 +1,7 @@
 <template>
   <div class="al-dialog">
-    <re-dialog
+    <el-dialog
+      top="15vh"
       :visible="dialogVisible"
       @close="closeCallback"
       @closed="closed"
@@ -23,7 +24,7 @@
           </slot>
         </slot>
       </div>
-    </re-dialog>
+    </el-dialog>
   </div>
 </template>
 
@@ -88,3 +89,27 @@ export default {
   },
 };
 </script>
+<style lang="less">
+.al-dialog {
+  /deep/ .el-dialog__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    .el-dialog {
+      width: auto;
+      &__body {
+        padding: 0 20px;
+      }
+      &__footer {
+        & > div {
+          display: flex;
+          justify-content: flex-end;
+          & > div + div {
+            margin-left: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+</style>

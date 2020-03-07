@@ -1,8 +1,8 @@
-import djGridBox from './main.vue';
+import alGridBox from './main.vue';
 
 /* istanbul ignore next */
-djGridBox.install = function(Vue) {
-  Vue.component(djGridBox.name, djGridBox);
+alGridBox.install = function(Vue) {
+  Vue.component(alGridBox.name, alGridBox);
 };
 
-export default djGridBox;
+export default alGridBox;

@@ -1,8 +1,8 @@
-import djScrollBox from './main.vue';
+import alScrollBox from './main.vue';
 
 /* istanbul ignore next */
-djScrollBox.install = function(Vue) {
-  Vue.component(djScrollBox.name, djScrollBox);
+alScrollBox.install = function(Vue) {
+  Vue.component(alScrollBox.name, alScrollBox);
 };
 
-export default djScrollBox;
+export default alScrollBox;

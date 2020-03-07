@@ -6,8 +6,9 @@
         <div class="line"></div>
         {{title}}
       </div>
-      <div class="al-content-box-content-bottom"></div>
-      <slot></slot>
+      <div class="al-content-box-content-bottom">
+        <slot></slot>
+      </div>
     </div>
   </div>
 </template>

@@ -1,8 +1,8 @@
-import djInput from './main.vue';
+import alInput from './main.vue';
 
 /* istanbul ignore next */
-djInput.install = function(Vue) {
-  Vue.component(djInput.name, djInput);
+alInput.install = function(Vue) {
+  Vue.component(alInput.name, alInput);
 };
 
-export default djInput;
+export default alInput;

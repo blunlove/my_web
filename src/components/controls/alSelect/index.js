@@ -1,8 +1,8 @@
-import djSelect from './main.vue';
+import alSelect from './main.vue';
 
 /* istanbul ignore next */
-djSelect.install = function(Vue) {
-  Vue.component(djSelect.name, djSelect);
+alSelect.install = function(Vue) {
+  Vue.component(alSelect.name, alSelect);
 };
 
-export default djSelect;
+export default alSelect;

@@ -1,8 +1,8 @@
-import djContentBox from './main.vue';
+import alContentBox from './main.vue';
 
 /* istanbul ignore next */
-djContentBox.install = function(Vue) {
-  Vue.component(djContentBox.name, djContentBox);
+alContentBox.install = function(Vue) {
+  Vue.component(alContentBox.name, alContentBox);
 };
 
-export default djContentBox;
+export default alContentBox;

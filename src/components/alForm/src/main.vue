@@ -1,7 +1,7 @@
 <template>
   <div class="al-form">
     <el-form ref="ruleForm" :model="formData" v-bind="bindForm()" @submit.native.prevent>
-      <dj-grid-box :data="formOptions" v-bind="$attrs">
+      <al-grid-box :data="formOptions" v-bind="$attrs">
         <template slot-scope="{item}">
           <el-form-item v-bind="item.formItem">
             <template v-if="item.type">
@@ -25,7 +25,7 @@
             <span class="al-form_text" v-else>{{ valueExtend(item) }}</span>
           </el-form-item>
         </template>
-      </dj-grid-box>
+      </al-grid-box>
     </el-form>
   </div>
 </template>
@@ -37,7 +37,7 @@
 
   const formAttrs = {
     'label-position': 'right',
-    // 'label-width': '92px',
+    'label-width': '92px',
     'label-suffix': ''
   };
   export default {
@@ -208,3 +208,54 @@
   }
   ;
 </script>
+<style lang="less">
+.al-form {
+  // margin-bottom: 0;
+  // /deep/ .el-form-item__label {
+  //   margin: 0;
+  // }
+  /deep/ .el-form-item {
+    // padding-right: 8px;
+    // margin-top: 4px;
+    // margin-bottom: 20px;
+    // line-height: 34px;
+    .el-form-item__content {
+      position: relative;
+      // word-break: break-word;
+      // margin-left: 100px;
+      // width: calc(~'100% - 100px');
+    }
+  }
+  /* /deep/ .is-error {
+      .el-checkbox-group {
+        border-color: #f56c6c;
+      }
+    }
+    /deep/ .is-success {
+      .el-checkbox-group {
+        border-color: #67c23a;
+      }
+    }*/
+  /deep/ .el-input, .el-select {
+    width: 100%;
+  }
+  /*.el-checkbox-group {
+    border: 1px solid transparent;
+  }*/
+  // .el-checkbox {
+  //   margin-right: 10px;
+  //   margin-left: 0;
+  // }
+  /deep/ .el-textarea__inner {
+    resize: none;
+  }
+  // .el-radio {
+  //   & + .el-radio {
+  //     margin-left: 20px;
+  //   }
+  //   /deep/ .el-radio__label {
+  //     padding-left: 2px;
+  //   }
+  // }
+}
+</style>

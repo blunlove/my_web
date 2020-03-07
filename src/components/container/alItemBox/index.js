@@ -1,8 +1,8 @@
-import djItemBox from './main.vue';
+import alItemBox from './main.vue';
 
 /* istanbul ignore next */
-djItemBox.install = function(Vue) {
-  Vue.component(djItemBox.name, djItemBox);
+alItemBox.install = function(Vue) {
+  Vue.component(alItemBox.name, alItemBox);
 };
 
-export default djItemBox;
+export default alItemBox;

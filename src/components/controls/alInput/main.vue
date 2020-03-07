@@ -13,20 +13,20 @@
         ref="input"
         :value="value"
         v-bind="{
-          placeholder:getPlaceholder('input', label),
+          placeholder: getPlaceholder('input', label),
           type: type !== 'number' ? type : undefined,
           maxlength: type === 'textarea' ? 200 : null, ...$attrs
         }"
         @input="change"
         v-on="filterListeners">
-        <div v-if="suffixLabel" class="suffix-label" slot="suffix">{{suffixLabel}}</div>
+        <!-- <div v-if="suffixLabel" class="suffix-label" slot="suffix">{{suffixLabel}}</div> -->
         <template v-for="key in Object.keys($slots)" :slot="key">
           <slot :name="key"></slot>
         </template>
       </el-input>
-      <div class="al-input-subscript" v-if="type === 'textarea' && subscript">
+      <!-- <div class="al-input-subscript" v-if="type === 'textarea' && subscript">
         <span>{{value ? value.length : 0}}/{{($attrs.maxlength) || 200}}</span>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -146,3 +146,5 @@
     }
   };
 </script>
+<style lang="less">
+</style>
