@@ -3,7 +3,6 @@
 </template>
 
 <script>
-import contentBox from '@/components/container/alContentBox';
 export default {
   name: 'baidu',
 };

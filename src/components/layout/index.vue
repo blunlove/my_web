@@ -5,8 +5,8 @@
       <transition
         name="slide-fade"
         mode="out-in"
-        enter-active-class="animated bounceInRight"
-        leave-active-class="animated bounceOutRight">
+        enter-active-class="animated bounceInRight faster"
+        leave-active-class="animated bounceOutRight faster">
         <router-view></router-view>
       </transition>
     </div>

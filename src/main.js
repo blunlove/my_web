@@ -3,12 +3,12 @@ import App from './App.vue';
 import router from './router';
 import store from './store';
 import elementUI from 'element-ui';
-import components from './components';
+import alun from 'alun';
 import './assets/css/index.less';
 
 Vue.config.productionTip = false;
 Vue.use(elementUI);
-Vue.use(components);
+Vue.use(alun);
 
 new Vue({
   router,
