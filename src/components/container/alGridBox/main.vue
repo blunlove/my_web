@@ -1,5 +1,5 @@
 <script>
-  import {checkType} from 'djcpsweb-utils';
+  import {checkType} from '@/utils';
   // const DEFAULT_ROW_RULE = function (item, index) {
   //   return index;
   // };

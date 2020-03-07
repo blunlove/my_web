@@ -31,7 +31,7 @@
 </template>
 
 <script>
-  import {listenerPolicy} from 'djcpsweb-utils';
+  // import {listenerPolicy} from 'djcpsweb-utils';
 
   export default {
     name: 'alSelectBox',

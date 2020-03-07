@@ -33,7 +33,7 @@
 <script>
   import typeMapPolicy from "../../mixins/typeMapPolicy";
   import listenersMap from "../../mixins/listenersMap";
-  import djGridBox from '../../../container/djGridBox';
+  import alGridBox from '../../container/alGridBox';
 
   const formAttrs = {
     'label-position': 'right',
@@ -203,7 +203,7 @@
       }
     },
     components: {
-      djGridBox
+      alGridBox
     }
   }
   ;

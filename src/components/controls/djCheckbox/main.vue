@@ -16,8 +16,8 @@
 </template>
 
 <script>
-import choice from 'djweb/src/mixins/choice';
-import { hasValue_arr } from "djcpsweb-utils";
+import choice from '../../mixins/choice';
+// import { hasValue_arr } from "djcpsweb-utils";
 
 export default {
   name: 'al-check-box',

@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import choice from 'djweb/src/mixins/choice';
+import choice from '../../mixins/choice';
 export default {
   name: 'al-radio',
   mixins: [choice],

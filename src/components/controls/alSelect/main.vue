@@ -19,8 +19,8 @@
 </template>
 
 <script>
-  import placeholder from '../mixins/placeholder';
-  import choice from '../mixins/choice';
+  import placeholder from '../../mixins/placeholder';
+  import choice from '../../mixins/choice';
 
   const DEFAULT_SELECT_ATTRS = {
     clearable: true,

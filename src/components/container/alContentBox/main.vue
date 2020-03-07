@@ -11,7 +11,7 @@
 <script>
   // import boxHeader from './boxHeader.vue';
   // import scrollBox from '../djScrollBox';
-  import {listenerPolicy} from 'djcpsweb-utils';
+  // import {listenerPolicy} from 'djcpsweb-utils';
 
   export default {
     name: 'dj-content-box',

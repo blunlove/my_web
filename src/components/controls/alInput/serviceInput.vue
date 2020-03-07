@@ -14,7 +14,7 @@
   </div>
 </template>
 <script>
-  import {handleComponent} from 'djweb/src/utils/handleComponent';
+  // import {handleComponent} from 'djweb/src/utils/handleComponent';
 
   export default {
     name: 'serviceInput',

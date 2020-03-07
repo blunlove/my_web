@@ -7,7 +7,7 @@
 </template>
 <script>
   // 无论容器内部是否需要自定义滚动条，自定义滚动条的相关元素都会生成，所以尽量避免容器嵌套时，两容器bottom和right两边重合的情况
-  import {listenerPolicy} from 'djcpsweb-utils';
+  // import {listenerPolicy} from 'djcpsweb-utils';
   export default {
     name: 'alScrollBox',
     data: function () {

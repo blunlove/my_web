@@ -16,7 +16,7 @@
 </template>
 
 <script>
-  import typeMapPolicy from 'djweb/src/mixins/typeMapPolicy';
+  import typeMapPolicy from '../../mixins/typeMapPolicy';
   export default {
     name: 'alItemBox',
     mixins: [typeMapPolicy],

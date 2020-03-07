@@ -2,7 +2,7 @@
 // const rules = require('./eslint/rules');
 module.exports = {
   root: true,
-  parser: "babel-eslint",
+  parser: 'babel-eslint',
   parserOptions: {
     ecmaVersion: 6,
     sourceType: 'module',
@@ -29,14 +29,14 @@ module.exports = {
     'eslint:recommended',
   ],
   // required to lint *.vue files
-  plugins: [
-    "html",
-    "import",
-    "json",
-    "node",
-    "promise",
-    "vue"
-  ],
+  // plugins: [
+  //   'html',
+  //   'import',
+  //   'json',
+  //   'node',
+  //   'promise',
+  //   'vue'
+  // ],
   // add your custom rules here
   rules: {}
 };

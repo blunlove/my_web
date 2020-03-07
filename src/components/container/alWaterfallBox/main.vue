@@ -9,7 +9,7 @@
   </div>
 </template>
 <script>
-  import {getStyle} from "djweb/src/utils/dom";
+  // import {getStyle} from "djweb/src/utils/dom";
 
   export default {
     name: 'alWaterfallBox',
