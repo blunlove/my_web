@@ -1,7 +1,7 @@
 <template>
   <div class="al-waterfall-box">
     <div class="al-waterfall-box-column" v-for="n in columnNumber" :key="n" :style="{width: columnWidth + 'px'}">
-      <div class="al-waterfall-box-item-wrap" v-for="_item in structure[n - 1]" v-if="_item" :key="_item[itemKey]"
+      <div class="al-waterfall-box-item-wrap" v-for="_item in structure[n - 1]" :key="_item[itemKey]"
            :ref="`item-${_item[itemKey]}`">
         <component :is="itemCom" :item="_item"></component>
       </div>

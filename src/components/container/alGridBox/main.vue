@@ -3,7 +3,7 @@
   // const DEFAULT_ROW_RULE = function (item, index) {
   //   return index;
   // };
-  const DEFAULT_COL_RULE = function (item, index, defaultReturn, rowDtb) {
+  const DEFAULT_COL_RULE = function (item, index, defaultReturn) {
     return defaultReturn;
   };
   function widthDistribution(row) {
